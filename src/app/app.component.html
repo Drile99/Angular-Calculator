@@ -1,20 +1,24 @@
 
+<h2 style="text-align: center; color: cyan;">My Calculator</h2>
+
 
 <div style="text-align: center;">
+  <!-- input polja za unos brojeva -->
   <input type="number" [(ngModel)]="num1">
   <input type="number" [(ngModel)]="num2">
   <br>
-  
-  <button (click)="add()">Add</button>
-  <button (click)="sub()">Sub</button>
+  <!-- dugmici koji oznacavaju operaciju koju korisnik zeli da uradi -->
+  <button type="button" class="btn btn-default" (click)="add()">Add</button>
+  <button type="button" class="btn btn-danger" (click)="sub()">Sub</button>
   <button (click)="multiply()">Multiply</button>
   <button (click)="divide()">Divide</button>
  
-  
+  <!-- prikaz rezultata nakon odradjene operacije  -->
   <br><br>
   <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; ">Result: {{num3}}</p>
   <br><br><br>
 
+  <!-- Faktorijel TO DO -->
   <h3>Factorial</h3>
   <input type="number" [(ngModel)]="fakt">
   <button (click)="faktorijel()">Faktorial</button>
